@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.scbprojectassignment.model.SearchDetails" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Movie Details"
+                    android:gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_margin="16dp"
+                    android:layout_width="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="200dp"/>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Title" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Title}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="IMDB ID" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.imdbID}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Type" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Type}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Rated" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Rated}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Released" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Released}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Released" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Genre}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Director" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Director}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Writer" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Writer}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Actors" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Actors}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Plot" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Plot}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Language" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Language}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Country" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Country}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Awards" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Awards}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Metascore" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Metascore}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="ImdbRating" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.imdbRating}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="ImdbVotes" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.imdbVotes}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="DVD" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.DVD}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="BoxOffice" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.BoxOffice}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="BoxOffice" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.BoxOffice}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Production" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Production}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Website" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Website}" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.3"
+                            android:text="Response" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_weight="0.1"
+                            android:text=":" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.Response}" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+            <include layout="@layout/layout_progress"/>
+        </RelativeLayout>
+
+</layout>
