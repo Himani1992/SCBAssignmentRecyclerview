@@ -34,12 +34,12 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("keystore.jks")
-            storePassword 'Ravikiran05'
-            keyAlias 'Key0'
-            keyPassword 'Ravikiran05'
-        }
+        storeFile file("keystore.jks")
+        storePassword 'himani'
+        keyAlias 'assignment'
+        keyPassword 'himani'
     }
+}
     buildTypes {
         release {
             minifyEnabled false
