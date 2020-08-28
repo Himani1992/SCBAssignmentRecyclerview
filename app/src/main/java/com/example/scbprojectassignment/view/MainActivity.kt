@@ -53,9 +53,7 @@ class MainActivity : AppCompatActivity() {
                     intent.putExtra("imdbID", it.imdbID)
                     startActivity(intent)
                 }
-
             }
-
         })
     }
 
