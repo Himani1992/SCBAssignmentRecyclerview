@@ -221,7 +221,6 @@ def getChangeString() {
             changeString += "[${entry.author}] ${truncated_msg}\n"
         }
     }
-
     if (!changeString) {
         changeString = " - No Changes -"
     }
